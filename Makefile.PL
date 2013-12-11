@@ -23,10 +23,11 @@ my %WriteMakefileArgs = (
     "Device::SerialPort" => 0,
     "ExtUtils::MakeMaker" => 0,
     "Moose" => 0,
-    "Moose::Util::TypeConstraints" => 0
+    "Moose::Util::TypeConstraints" => 0,
+    "Time::HiRes" => 0
   },
   "TEST_REQUIRES" => {},
-  "VERSION" => "0.001",
+  "VERSION" => "0.002",
   "test" => {
     "TESTS" => "t/*.t"
   }

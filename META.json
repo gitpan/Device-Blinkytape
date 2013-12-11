@@ -43,11 +43,12 @@
             "Device::SerialPort" : "0",
             "ExtUtils::MakeMaker" : "0",
             "Moose" : "0",
-            "Moose::Util::TypeConstraints" : "0"
+            "Moose::Util::TypeConstraints" : "0",
+            "Time::HiRes" : "0"
          }
       }
    },
-   "release_status" : "testing",
+   "release_status" : "stable",
    "resources" : {
       "repository" : {
          "type" : "git",
@@ -55,7 +56,7 @@
          "web" : "https://github.com/okko/perl-Device-BlinkyTape.git"
       }
    },
-   "version" : "0.001",
+   "version" : "0.002",
    "x_authority" : "cpan:OKKO"
 }
 

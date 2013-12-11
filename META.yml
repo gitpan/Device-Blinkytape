@@ -22,7 +22,8 @@ requires:
   ExtUtils::MakeMaker: 0
   Moose: 0
   Moose::Util::TypeConstraints: 0
+  Time::HiRes: 0
 resources:
   repository: git://github.com:okko/perl-Device-BlinkyTape.git
-version: 0.001
+version: 0.002
 x_authority: cpan:OKKO

@@ -7,6 +7,8 @@ Makefile.PL
 README
 cpanfile
 dist.ini
+example/experiment-setup-instructions.txt
+example/experiment.pl
 example/simulate.pl
 lib/Device/BlinkyTape.pm
 lib/Device/BlinkyTape/SimulationPort.pm
