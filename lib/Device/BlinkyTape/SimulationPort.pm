@@ -2,7 +2,7 @@ package Device::BlinkyTape::SimulationPort;
 use strict;
 BEGIN {
     our $AUTHORITY = 'cpan:OKKO'; # AUTHORITY
-    our $VERSION = '0.002'; # VERSION
+    our $VERSION = '0.003'; # VERSION
 }
 use Moose;
 use Tk;
