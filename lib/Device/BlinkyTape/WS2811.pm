@@ -2,7 +2,7 @@ package Device::BlinkyTape::WS2811;
 use strict;
 BEGIN {
     our $AUTHORITY = 'cpan:OKKO'; # AUTHORITY
-    our $VERSION = '0.003'; # VERSION
+    our $VERSION = '0.004'; # VERSION
 }
 use Moose;
 use utf8;
@@ -37,7 +37,10 @@ sub send_pixel {
     usleep($self->sleeptime);
     $self->port->write(chr($b));
     usleep($self->sleeptime);
+    my $string_in = $self->port->input; # flush input to prevent slowing down
 }
+
+
 
 sub show {
     my $self = shift;
@@ -47,6 +50,7 @@ sub show {
     usleep($self->sleeptime);
     $self->port->write(chr(255));
     usleep($self->sleeptime);
+    my $string_in = $self->port->input; # flush input to prevent slowing down
 }
 
 sub gamma {
